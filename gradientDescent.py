@@ -1,5 +1,5 @@
 import numpy as np
-from costFunction import cost_function as cf
+from costFunction import computeCost as cf
 
 def gradientDescent(x, y, theta, alpha, N):
     """
@@ -28,7 +28,7 @@ def gradientDescent(x, y, theta, alpha, N):
         # Here we include an extra 1/2 to
         theta[0] -= alpha * np.mean(error * x_wb[:,0])
         theta[1] -= alpha * np.mean(error *  x_wb[:,1])
-        J_record[step] = cf(prediction, y)
+        J_record[step] = cf(x_wb, y, theta)
 
         # print(theta)
     return theta, J_record

@@ -12,7 +12,7 @@ x_pop = data[:,0]
 y_profit = data[:,1]
 
 
-features, jhist = gd(x_pop, y_profit, np.zeros((2)), 0.01, 1500)
+theta, jhist = gd(x_pop, y_profit, np.zeros((2)), 0.01, 1500)
 
 pltd(x=x_pop,
      y=y_profit,
@@ -23,7 +23,9 @@ pltd(x=x_pop,
 
 axes = plt.gca()
 x_vals = np.array(axes.get_xlim())
-y_vals = features[0] + features[1] * x_vals
+y_vals = theta[0] + theta[1] * x_vals
 plt.plot(x_vals, y_vals, '--', label='Linear Regression')
 plt.legend()
-plt.show()
+# plt.show()
+print('Profit prediction for 35k people: $', (theta[0] + theta[1]*3.5)*10000)
+print('Profit prediction for 70k people: $', (theta[0] + theta[1]*7)*10000)

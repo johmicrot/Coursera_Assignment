@@ -1,8 +1,8 @@
 import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 from matplotlib import cm
-from computeCost import computeCost
+
+from supporting_functions import computeCost
 
 theta = [-3.63029144,  1.16636235]  # Hard coded, recompute later
 

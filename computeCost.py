@@ -13,5 +13,5 @@ def computeCost(x, y, theta):
     m = len(y)
     error = prediction - y
     J = np.sum(error**2)/(2*m)
-
+    print(J)
     return(J)

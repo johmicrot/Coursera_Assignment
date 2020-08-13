@@ -34,10 +34,10 @@
 
 ## Executing the assignment
 
-First download the github repository, then navigate to the respository directy on your local computer.
+First download the github repository, then navigate to the respository on your local computer.
 
 To create a docker image run 
-"docker build -t fml ."
+"docker build -t fml ."  (if your using linux type sudo before all commands)
 
 Then nagivate to inside the container by using the command
 "docker run -it fml sh"

@@ -7,9 +7,6 @@
 
   <p align="center">
     The objective is to solve single and multivariable linear regression problems from the Coursera Machine Learning course
-
-    <br />
-    <br />
 </p>
 
 
@@ -20,7 +17,7 @@
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
-* [Explenation](#prerequisites)
+* [Explanation](#prerequisites)
 
 
 
@@ -90,7 +87,7 @@ Below we can see the cost vs iterations for varios learning rates. The largest l
 
 The closed form solution below is shown to be euqivalent to the weights obtained though gradient descent.
 
-<img src=figures/closed_form_solution.png height="80">
+<img src=figures/closed_form_solution.png height="50">
 
 
 

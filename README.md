@@ -18,7 +18,11 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
 * [Explanation](#prerequisites)
-
+  * [2.1 Plotting the Data]
+  * [2.2 Gradient Descent]
+  * [3 Linear regression with multiple variables]
+  * [3.2.1 Selecting learning rates]
+  * [3.3  Normal Equations]
 
 
 ### Libraries used With
@@ -80,6 +84,7 @@ Feature normalization is performed with supporting_functions.featureNormalize. T
 ### 3.2.1 Optional (ungraded) exercise: Selecting learning rates
 
 Below we can see the cost vs iterations for varios learning rates. The largest learning rate reached convergence the quickest.  This is due to the simplicity of the problem as seen when Visualizing J(θ).  The topological space of the cost function is very smooth.  If the cost function had steeper curves, or if we are working with more features that create less smooth function, it is possible that a learning rate of 0.3 would cause instable learning.
+
 <img src=figures/ex1data2_multiple_learning_rates.png height="400">
 
 

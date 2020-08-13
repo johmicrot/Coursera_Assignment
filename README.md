@@ -15,6 +15,7 @@
 ## Table of Contents
 
 * About the Project
+* File explenations
 * Libraries used
 * Executing the assignment
 * Examining results
@@ -24,6 +25,17 @@
   * 3.2.1 Selecting learning rates
   * 3.3  Normal Equations
 
+### File explenations
+
+* DockerFile -              Contains docker commands to create docker image
+* Linear_regression.py -    Main file that executes the single and multi-variable assignment.  
+* supporting_functions.py - Contains the following functions
+  * featureNormalize -      Normalizes data
+  * computeCost -           Compute the cost for single and multiple features
+  * gradientDescent -       Performs a specified number of gradient descent updates and returns the updated weights
+  * plotData -              Uses matplotlib to build a figure
+  
+  
 
 ### Libraries used
 

@@ -1,4 +1,7 @@
 from supporting_functions import *
+import matplotlib
+import os
+matplotlib.use('agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -11,21 +14,21 @@ x_wb = np.append(np.ones((len(x), 1)), x.reshape(-1, 1), axis=1)
 y_profit = data[:, 1]
 
 
-print('2.1 - Plotting the data')
+print('2.1 Plotting the data')
 plotData(x=x,
          y=y_profit,
          title='Food truck profit',
          xlabel='Population of City in 10,000s',
          ylabel='Profit in $10,000s',
          )
-plt.savefig('figures/ex1data1.png')
+plt.savefig('./figures/ex1data1.png')
 print('\tSaved ex1data1.png in directory figures')
 
-print('2.2.3 -  Computing the cost')
+print('2.2.3 Computing the cost')
 
 print('\tCost when theta is initialized to zero is: %f' % (computeCost(x_wb, y_profit, np.zeros(2))))
 
-print('2.2.4 - Gradient descent')
+print('2.2.4 Gradient descent')
 theta, j_hist = gradientDescent(x_wb, y_profit, np.zeros(2), 0.01, 1500)
 print('\tTrained ex1data1 with gradient descent, and got h(x) =  %.4f + %.4fx' % (theta[0], theta[1]))
 
@@ -44,7 +47,7 @@ plt.plot(x_vals, y_vals, label='Linear Regression')
 plt.legend()
 
 
-plt.savefig('figures/ex1data1_with_regression_line.png')
+plt.savefig('./figures/ex1data1_with_regression_line.png')
 plt.close()
 print('\tSaved ex1data1_with_regression_line.png in directory figures')
 
@@ -55,8 +58,7 @@ print('\tProfit prediction for 70,000 people: $%f' % ((theta[0] + theta[1]*7)*10
 print('2.4 Visualizing J(θ)')
 # Matplotlib requires a 2d inputs so we use numpy to generate a grid for X and Y
 X, Y = np.meshgrid(np.linspace(-10, 10, 100),
-                   np.linspace(-1, 4, 100),
-                   indexing='xy')
+                   np.linspace(-1, 4, 100))
 # Here the grid of cost values are generated on a 100x100 grid with using
 # the appropriate X and Y values.
 Z = np.zeros((100, 100))
@@ -80,8 +82,9 @@ CS = ax2.contour(X, Y, Z, np.logspace(-2, 3, 20), cmap=plt.cm.coolwarm, antialia
 ax2.scatter(theta[0], theta[1], c='r')
 for ax in fig.axes:
     ax.set_xlabel(r'$\theta_0 (Bias)$', fontsize=12)
-    ax.set_ylabel(r'$\theta_1$ (Weights)', fontsize=12)
-plt.savefig('figures/3d_cost_visualization.png')
+    ax.set_ylabel(r'$\theta_1$ (Weight)', fontsize=12)
+plt.savefig('./figures/3d_cost_visualization.png')
+plt.close()
 print('\tSaved 3d_cost_visualization.png to directory figures')
 print('3 Linear regression with multiple variables')
 

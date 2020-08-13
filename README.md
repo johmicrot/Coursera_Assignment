@@ -29,7 +29,7 @@
 
 * DockerFile -              Contains docker commands to create docker image
 * Linear_regression.py -    Main file that executes the single and multi-variable assignment.  
-* supporting_functions.py - Contains the following functions
+* supporting_functions.py - For better organization I preferred to put all the functions into one file. Contains the following functions:
   * featureNormalize -      Normalizes data
   * computeCost -           Compute the cost for single and multiple features
   * gradientDescent -       Performs a specified number of gradient descent updates and returns the updated weights
@@ -41,7 +41,9 @@
 
 * [Python 3](https://github.com/python)
 * [Matplotlib](https://github.com/matplotlib/matplotlib) Used only for plotting
-* [Numpy](https://github.com/numpy/numpy) Used for loading in csv, matrix multiplication, and performing an inverse matrix  
+* [Numpy](https://github.com/numpy/numpy) Used for loading in csv, matrix multiplication, and performing an inverse matrix.  
+
+The documentation specifies only Python, scikit-learn, and TensorFlow can be used, for the machine learning parts.  Matplotlib is used to only display resuts, and numpy is used to load in csv files efficiently, and to easily perform matrix operations.
 
 
 ## Executing the assignment

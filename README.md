@@ -6,9 +6,8 @@
   <h3 align="center">Takehome assignment for FML job interview</h3>
 
   <p align="center">
-    The objective is to solve  single and multivariable linear regression problems from the Coursera Machine Learning course
-    <br />
-    <a href="https://github.com/johmicrot/Coursera_Assignment"><strong>Explore the docs »</strong></a>
+    The objective is to solve single and multivariable linear regression problems from the Coursera Machine Learning course
+
     <br />
     <br />
 </p>

@@ -14,18 +14,18 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-* [Explanation](#prerequisites)
-  * [2.1 Plotting the Data]
-  * [2.2 Gradient Descent]
-  * [3 Linear regression with multiple variables]
-  * [3.2.1 Selecting learning rates]
-  * [3.3  Normal Equations]
+* About the Project
+* Libraries used
+* Executing the assignment
+* Examining results
+  * 2.1 Plotting the Data
+  * 2.2 Gradient Descent
+  * 3 Linear regression with multiple variables
+  * 3.2.1 Selecting learning rates
+  * 3.3  Normal Equations
 
 
-### Libraries used With
+### Libraries used
 
 * [Python 3](https://github.com/python)
 * [Matplotlib](https://github.com/matplotlib/matplotlib) Used only for plotting

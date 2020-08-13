@@ -86,11 +86,11 @@ Below we can see the cost vs iterations for varios learning rates. The largest l
 <img src=figures/ex1data2_multiple_learning_rates.png height="400">
 
 
-# 3.3  Normal Equations
+### 3.3  Normal Equations
 
 The closed form solution below is shown to be euqivalent to the weights obtained though gradient descent.
 
-<img src=figures/closed_form_solution.png height="200">
+<img src=figures/closed_form_solution.png height="80">
 
 
 

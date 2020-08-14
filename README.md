@@ -50,14 +50,25 @@ The documentation specifies only Python, scikit-learn, and TensorFlow can be use
 
 First download the github repository, then navigate to the respository on your local computer.
 
+Create a volume with 
+`docker volume create my-vol`
+
+View the location or  "Mountpoint" of where you volume saves images with 
+`docker volume inspect my-vol`
+
+The default location for linux devices is 
+
 To create a docker image run 
-"docker build -t fml ."  (if your using linux type sudo before all commands)
+`docker build -t fml .`  (if your using linux type sudo before all commands)'
 
-Then nagivate to inside the container by using the command
-"docker run -it fml sh"
+Then execute the docker with saving the graphs to the volume location 
+`docker run -d --name fml -v my-vol:/figures fml`
 
-Once inside the container execute the assignment by typing
-"python Linear_regression.py"
+You can view the output of the docker by typing 
+` sudo docker logs -f fml`
+
+
+
 
 Assignment answers will display on the command line output, and the plot figure
 will be saved to the directory figures/ 

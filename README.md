@@ -14,7 +14,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* File explenations
+* File explanations
 * Libraries used
 * Executing the assignment
 * Examining results
@@ -24,7 +24,7 @@
   * 3.2.1 Selecting learning rates
   * 3.3  Normal Equations
 
-### File explenations
+### File explanations
 
 * DockerFile -              Contains docker commands to create docker image
 * Linear_regression.py -    Main file that executes the single and multi-variable assignment.  

@@ -117,6 +117,9 @@ The closed form solution below is shown to be euqivalent to the weights obtained
 
 <img src=figures/closed_form_solution.png height="50">
 
-
+My code outputs 
+`[340412.65957447 109447.79646964  -6578.35485416] Closed form solution weights
+	[340412.65957447 109447.79646964  -6578.35485416] Estimated weights from batch gradient descent
+`
 
 

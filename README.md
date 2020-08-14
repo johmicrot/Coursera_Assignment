@@ -14,7 +14,6 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* About the Project
 * File explenations
 * Libraries used
 * Executing the assignment
@@ -29,12 +28,11 @@
 
 * DockerFile -              Contains docker commands to create docker image
 * Linear_regression.py -    Main file that executes the single and multi-variable assignment.  
-* supporting_functions.py - For better organization I preferred to put all the functions into one file. Contains the following functions:
+* supporting_functions.py - For better organization, I preferred to put all the functions into one file. Contains the following functions:
   * featureNormalize -      Normalizes data
   * computeCost -           Compute the cost for single and multiple features
   * gradientDescent -       Performs a specified number of gradient descent updates and returns the updated weights
   * plotData -              Uses matplotlib to build a figure
-  
   
 
 ### Libraries used
@@ -48,7 +46,7 @@ The documentation specifies only Python, scikit-learn, and TensorFlow can be use
 
 ## Executing the assignment
 
-First download the github repository, then navigate to the respository on your local computer. If your using linux type sudo before all commands
+First, download the github repository, then navigate to the repository on your local computer. If you're using linux type "sudo" before all commands
 
 Create a volume with 
 `docker volume create my-vol`
@@ -87,12 +85,11 @@ The cost function we will be minimizing is shown below. This is a MSE function w
 Our dataset has only one feature so we have only one parameter, plus a bias.  The equation is shown below.  The reason numpy is used is to allow us to simply make a prediction by using the command "np.dot(x, theta)"  where x is the input features, and theta are the features.  
 
 <img src=figures/hypothesis_function.png height="75">
-
 The parameter update equation is given below.  The code implementation is given in supporting_functions.gradientDescent. The function returns the parameter after updating N times, and the cost history for all N updates.
 
 <img src=figures/batch_update_equation.png height="80">
 
-The code outpus the following predictios based on the learned weights 
+The code outputs the following predictions based on the learned weights 
 
 `Profit prediction for 35,000 people: $4519.767868`
 
@@ -101,7 +98,7 @@ The code outpus the following predictios based on the learned weights
 
 ### 2.4 Visualizing J(θ)
 
-Below we can see a 3d and 2d representation of the cost function.  The left image give you a more zoomed in 3d view, while the right image shows you a contour figure.
+Below we can see a 3d and 2d representation of the cost function.  The left image gives you a more zoomed-in 3d view, while the right image shows you a contoured figure.
 <img src=figures/3d_cost_visualization.png width="1200">
 
 
@@ -110,17 +107,16 @@ Below we can see a 3d and 2d representation of the cost function.  The left imag
 
 Feature normalization is performed with supporting_functions.featureNormalize. This helps with scaling and shifting all the features to approximately the same space which will produce gradients of approximately the same magnitude.  If one feature produces gradients many orders of magnitude larger then another, this can dominate the training and lead to either ineffective models or unstable training.
 
-
 ### 3.2.1 Optional (ungraded) exercise: Selecting learning rates
 
-Below we can see the cost vs iterations for varios learning rates. The largest learning rate reached convergence the quickest.  This is due to the simplicity of the problem as seen when Visualizing J(θ).  The topological space of the cost function is very smooth.  If the cost function had steeper curves, or if we are working with more features that create less smooth function, it is possible that a learning rate of 0.3 would cause instable learning.
+Below we can see the cost vs iterations for various learning rates. The largest learning rate reached convergence the quickest.  This is due to the simplicity of the problem with only using one variable.  The path towards gradient descent is trivial in this case.
 
 <img src=figures/ex1data2_multiple_learning_rates.png height="400">
 
 
 ### 3.3  Normal Equations
 
-The closed form solution below is shown to be euqivalent to the weights obtained though gradient descent.
+The closed-form solution below is shown to be equivalent to the weights obtained through gradient descent.
 
 <img src=figures/closed_form_solution.png height="50">
 

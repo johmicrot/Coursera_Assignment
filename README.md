@@ -92,6 +92,13 @@ The parameter update equation is given below.  The code implementation is given 
 
 <img src=figures/batch_update_equation.png height="80">
 
+The code outpus the following predictios based on the learned weights 
+
+`Profit prediction for 35,000 people: $4519.767868`
+
+`Profit prediction for 70,000 people: $45342.450129`
+
+
 ### 2.4 Visualizing J(θ)
 
 Below we can see a 3d and 2d representation of the cost function.  The left image give you a more zoomed in 3d view, while the right image shows you a contour figure.
@@ -119,7 +126,7 @@ The closed form solution below is shown to be euqivalent to the weights obtained
 
 My code outputs 
 
-`[340412.65957447 109447.79646964  -6578.35485416] Closed form solution weights `
+`[340412.65957447 109447.79646964  -6578.35485416] Closed form solution weights `</br>
 `[340412.65957447 109447.79646964  -6578.35485416] Estimated weights from batch gradient descent`
 `
 

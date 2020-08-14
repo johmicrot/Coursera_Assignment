@@ -56,8 +56,6 @@ Create a volume with
 View the location or  "Mountpoint" of where you volume saves images with 
 `docker volume inspect my-vol`
 
-The default location for linux devices is 
-
 To create a docker image run 
 `docker build -t fml .`  (if your using linux type sudo before all commands)'
 

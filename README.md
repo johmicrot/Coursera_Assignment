@@ -48,7 +48,7 @@ The documentation specifies only Python, scikit-learn, and TensorFlow can be use
 
 ## Executing the assignment
 
-First download the github repository, then navigate to the respository on your local computer.
+First download the github repository, then navigate to the respository on your local computer. If your using linux type sudo before all commands
 
 Create a volume with 
 `docker volume create my-vol`
@@ -57,7 +57,7 @@ View the location or  "Mountpoint" of where you volume saves images with
 `docker volume inspect my-vol`
 
 To create a docker image run 
-`docker build -t fml .`  (if your using linux type sudo before all commands)'
+`docker build -t fml .`  
 
 Then execute the docker with saving the graphs to the volume location 
 `docker run -d --name fml -v my-vol:/figures fml`
